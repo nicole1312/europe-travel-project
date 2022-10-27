@@ -27,3 +27,11 @@ p{
     font-size: 18px;
     margin:50px
 }
+footer{
+    color: #fbf3f2;
+    text-align: center;
+}
+a{
+    color: #f3d360;
+    text-decoration: none;
+}
