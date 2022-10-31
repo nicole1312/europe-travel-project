@@ -1,37 +1,216 @@
 body{
-    background-color: #032539;
-   
+  margin: 0;
+  padding: 0; 
+
+}
+.slide{
+    width: 100vw;
+    height: 100vh;
+    
+}
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 700vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: left top;
+}
+.one{
+    background:#011021 ;
+    background-size: auto 100vh;
+    background-repeat: repeat-x;
+    width: 400vw;
+
+}
+.outer-wrapper{
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    overflow-y: auto;
+    overflow-x: hidden;
+    transform-origin: left top;
+    position: absolute;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    
+}
+::-webkit-scrollbar{
+    display: none;
 }
 
+.container-title{
+    background-image:linear-gradient(rgba(0,0,0,0.3),
+                                    rgba(0,0,0,0.3)),
+                     url(../pictures/road.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 3px;
+    display: block;
+    margin: 100px 350px;
+    padding: 220px 0;
+   
+}
+h3{
+    color: #fbf3f2;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 22px;
+    padding: 0;
+    text-align: center;
+    text-shadow: 0 0 1px #fbf3f2,
+                 0 0 4px #011021;
+}
 h1{
     color: #f3d360;
-    font-family: 'Catamaran', sans-serif;
-    font-size: 80px;
-    margin: -20px;
+    text-shadow: 0 0 1px #f3d360,
+                 0 0 4px #011021;
+    font-family: 'Caveat', cursive;
+    font-size: 90px;
+    font-weight: 400;
+    margin-top: -10px;
     text-align: center;
 }
 h2{
     color: #fbf3f2;
-    font-family: 'Caveat', cursive;
-    font-size: 45px;
-    font-weight: 200;
-    margin: 50px 0 -30px;
+    font-size: 40px;
     text-align: center;
+    margin-top: -20px;
+    text-shadow: 0 0 1px #fbf3f2,
+                 0 0 4px #011021;
 }
-.container-text{
-    margin: 50px;
+
+h4{
+    color: #fbf3f2;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 30px;
+    margin: 20px 0 ;
+    text-align: center;
+    text-shadow: 0 0 1px #fbf3f2,
+                 0 0 4px #011021;
 }
-p{
+.text{
     color: #fbf3f2;
     font-family: 'Merriweather Sans', sans-serif;
-    font-size: 18px;
-    margin:50px
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 20px 350px;
+}
+.travel{
+    text-align: center;
+}
+ .travel-link {
+     color: #f3d360;
+     box-shadow: 0 0 1px #f3d360,
+                 0 0 3px #f3d360;
+     border-radius: 3px;
+     font-family: 'Caveat', cursive;
+     font-size: 30px;
+     padding: 10px 20px;
+     transition: all 200ms ease-in-out;
+     text-decoration: none;
+    
+} 
+.travel-link:hover{
+    box-shadow: 0 0 1px #f3d360,
+                0 0 4px #f3d360,
+                0 0 8px #f3d360,
+                0 0 16px #fbf3f2;
+    font-size: 35px;
+    text-shadow: 0 0 1px #f3d360,
+                0 0 2px #fbf3f2;
+            
+}
+.video{
+    aspect-ratio: 21/9;
+    display: block;
+    margin: 100px  auto 0;
+    max-width: 1000px;
+    width: 100%;
+
+}
+.london a,
+.lisbon a,
+.rome a,
+.paris a{
+    color: #fbf3f2;
+    font-size: 60px;
+    font-family:'Catamaran', sans-serif ;
+    text-decoration: none;
+    text-shadow: 0 0 1px #fbf3f2,
+                 0 0 4px #011021;
+}
+.london a:hover,
+.lisbon a:hover,
+.rome a:hover,
+.paris a:hover{
+    color: #f3d360;
+    transition: all 500ms ease-in-out;
+    text-shadow: 0 0 2px #011021,
+                 0 0 4px #011021,
+                 0 0 6px #f3d360;
+}
+.london-box{
+    background-image:linear-gradient(rgba(0,0,0,0.3),
+                                    rgba(0,0,0,0.3)),
+                    url(../pictures/london-sunset.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    margin: 100px 350px 0;
+    padding: 220px 0;
+}
+.lisbon-box{
+    background-image:linear-gradient(rgba(0,0,0,0.3),
+                                    rgba(0,0,0,0.3)),
+                    url(../pictures/lisbon.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    margin: 100px 350px 0;
+    padding: 220px 0;
+}
+.rome-box{
+    background-image:linear-gradient(rgba(0,0,0,0.3),
+                                    rgba(0,0,0,0.3)),
+                    url(../pictures/rome.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    margin: 100px 350px 0;
+    padding: 220px 0;
+}
+.paris-box{
+    background-image:linear-gradient(rgba(0,0,0,0.3),
+                                    rgba(0,0,0,0.3)),
+                    url(../pictures/paris.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    margin: 100px 350px 0;
+    padding: 200px 0;
+}
+.london-text,
+.lisbon-text,
+.rome-text,
+.paris-text{
+    color: #fbf3f2;
+    font-family: 'Merriweather Sans', sans-serif;
+    line-height: 1.5;
+    padding: 20px 350px;
+}
+img{
+    max-width: 100%;
 }
 footer{
     color: #fbf3f2;
+    margin: 100px 0 0;
     text-align: center;
 }
-a{
+.coder {
     color: #f3d360;
+    margin: 30px 0;
     text-decoration: none;
 }
+.coder:hover{
+   color: #fbf3f2;
+}
+  
