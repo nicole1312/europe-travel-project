@@ -3,51 +3,20 @@ body{
   padding: 0; 
 
 }
-.slide{
-    width: 100vw;
-    height: 100vh;
-    
-}
-.wrapper{
-    display: flex;
-    flex-direction: row;
-    width: 700vw;
-    transform: rotate(90deg) translateY(-100vh);
-    transform-origin: left top;
-}
-.one{
-    background:#011021 ;
-    background-size: auto 100vh;
-    background-repeat: repeat-x;
-    width: 400vw;
-
-}
-.outer-wrapper{
-    width: 100vh;
-    height: 100vw;
-    transform: rotate(-90deg) translateX(-100vh);
-    overflow-y: auto;
-    overflow-x: hidden;
-    transform-origin: left top;
-    position: absolute;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    
-}
-::-webkit-scrollbar{
-    display: none;
-}
-
-.container-title{
-    background-image:linear-gradient(rgba(0,0,0,0.3),
-                                    rgba(0,0,0,0.3)),
+.case-1{
+    background-image:linear-gradient(rgba(0,0,0,0.2),
+                                    rgba(0,0,0,0.2)),
                      url(../pictures/road.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 220px 0;
+}
+.container-title{
+    background-color:rgba(223, 226, 230, 0.3);
     border-radius: 3px;
     display: block;
     margin: 100px 350px;
-    padding: 220px 0;
+    padding: 40px 0;
    
 }
 h3{
@@ -57,7 +26,8 @@ h3{
     padding: 0;
     text-align: center;
     text-shadow: 0 0 1px #fbf3f2,
-                 0 0 4px #011021;
+                 0 0 4px #011021,
+                 0 0 6px #011021;
 }
 h1{
     color: #f3d360;
@@ -73,11 +43,15 @@ h2{
     color: #fbf3f2;
     font-size: 40px;
     text-align: center;
-    margin-top: -20px;
+    margin-top: 20px;
     text-shadow: 0 0 1px #fbf3f2,
-                 0 0 4px #011021;
+                 0 0 4px #011021,
+                 0 0 6px #011021;
 }
-
+.case-2{
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 80%);
+    padding: 220px 0;
+}
 h4{
     color: #fbf3f2;
     font-family: 'Catamaran', sans-serif;
@@ -119,18 +93,9 @@ h4{
                 0 0 2px #fbf3f2;
             
 }
-.video{
-    aspect-ratio: 21/9;
-    display: block;
-    margin: 100px  auto 0;
-    max-width: 1000px;
-    width: 100%;
-
-}
 .london a,
 .lisbon a,
-.rome a,
-.paris a{
+.rome a{
     color: #fbf3f2;
     font-size: 60px;
     font-family:'Catamaran', sans-serif ;
@@ -140,8 +105,7 @@ h4{
 }
 .london a:hover,
 .lisbon a:hover,
-.rome a:hover,
-.paris a:hover{
+.rome a:hover{
     color: #f3d360;
     transition: all 500ms ease-in-out;
     text-shadow: 0 0 2px #011021,
@@ -178,20 +142,10 @@ h4{
     margin: 100px 350px 0;
     padding: 220px 0;
 }
-.paris-box{
-    background-image:linear-gradient(rgba(0,0,0,0.3),
-                                    rgba(0,0,0,0.3)),
-                    url(../pictures/paris.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 3px;
-    margin: 100px 350px 0;
-    padding: 200px 0;
-}
+
 .london-text,
 .lisbon-text,
-.rome-text,
-.paris-text{
+.rome-text{
     color: #fbf3f2;
     font-family: 'Merriweather Sans', sans-serif;
     line-height: 1.5;
