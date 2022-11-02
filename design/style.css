@@ -184,4 +184,69 @@ section a:hover{
 .coder:hover{
    color: var(--secondary-color);
 }
-  
+  @media(max-width: 800px){
+    hero{
+        display: block;
+    }
+    h1{
+        font-size: 40px;
+        margin: 40px 0 0;
+    }
+    .container-1,
+    .container-2{
+        grid-template-columns: 1fr;
+        margin: 20px 0;
+    }
+    .container-3{
+        padding: 20px 0;
+    }
+    h4{
+        font-size: 35px;
+    }
+    .text{
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 10px;
+    }
+    strong{
+        font-size: 25px;
+    }
+h3, h5{
+    font-size: 18px;
+}
+    h2,
+    em{
+        font-size: 30px;
+        margin: 30px 0;
+    }
+    .london{
+        font-size: 30px;
+    }
+    .travel-link{
+        font-size: 25px;
+    }
+    .travel:hover,
+    .travel-link:hover{
+        transform: none;
+    }
+    .grid{
+        grid-template-columns: 1fr;
+    }
+    ul{
+       margin-top: -20px;
+    }
+    .more,
+    .about-this-website,
+    .about-me{
+        font-size: 14px;
+        margin: 8px 0;
+      
+    }
+    .footer-text{
+        color: white;
+        font-size: 13px;
+        line-height: 1.2;
+        margin: -20px 0 20px;
+       
+    }
+  }
