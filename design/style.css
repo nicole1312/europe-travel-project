@@ -43,7 +43,6 @@ h1{
     font-family: 'Caveat', cursive;
     font-size: 90px;
     font-weight: 400;
-    letter-spacing: 2px;
     margin: 80px 0;
     text-align: center; 
     -webkit-text-stroke-width: 1px;
@@ -57,8 +56,7 @@ h4{
     color: var(--primary-color);
     font-family: 'Caveat', cursive;
     font-size: 60px;
-    font-weight: 400;
-    letter-spacing: 3px;
+    font-weight: 400; 
     margin: 15px 0 ;
     text-align: center;
     -webkit-text-stroke-width: 1px;
@@ -71,7 +69,9 @@ hr{
 }
 h6{
     color: var(--primary-color);
+    font-family: 'Catamaran', sans-serif;
     font-size: 15px;
+    letter-spacing: 1px;
     margin: 30px 0 0;
     text-align: center;
 }
@@ -92,7 +92,7 @@ h2{
     color: var(--primary-color); 
     font-family: 'Catamaran', sans-serif;
     font-size: 50px;
-    letter-spacing: 2px;
+    letter-spacing: -1px;
     margin: 100px 0;
     text-align: center; 
     -webkit-text-stroke-width: 1px;
@@ -107,6 +107,7 @@ h5{
     color: var(--primary-color);
     font-family: 'Catamaran', sans-serif;
     font-size: 30px;
+    letter-spacing: 1px;
     margin: 0 100px;
     padding: 0 20px;
 }
@@ -137,6 +138,37 @@ h5{
 .london:hover{
    color: #90c6e8;
 }
+.container-3-col{
+    background-color: var(--primary-color);
+}
+.container-3-col h6{
+    color: var(--secondary-color);
+}
+.container-3-col .neils-yard{
+    display: block;
+    margin: 0 auto;
+}
+.container-3-col img{
+    max-width: 200px;
+} 
+.container-3-col h5{
+    text-align: center;
+}
+.container-3-col .card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.container-3-col .card-text{
+    
+    color: var(--secondary-color);
+    font-size: 14px;
+}
+.container-3-col a{
+    color: var(--link-color);
+    font-family: 'Caveat', cursive;
+    text-decoration: none;
+
+}
 img{
     max-width: 100%;
 }
@@ -164,7 +196,7 @@ footer{
     padding: 100px 0 -100px;
     text-align: start;
 }
-.container-3{
+.container-footer{
     background-color: var(--primary-color);
     padding:100px 0 0;
 }
@@ -225,7 +257,7 @@ section a:hover{
         grid-template-columns: 1fr;
         margin: 20px 0;
     }
-    .container-3{
+    .container-footer{
         padding: 20px 0;
     }
     h4{
