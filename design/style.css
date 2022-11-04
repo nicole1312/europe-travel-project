@@ -150,6 +150,7 @@ h6{
 .container-place{
     padding: 8px;
     border: 1px solid var(--primary-color);
+    height: max-content;
 }
 .place-description{
     padding: 20px;
@@ -174,12 +175,14 @@ h6{
     text-align: start;
     text-shadow: var(--text-shadow-color);
 }
+.container-3-col .waterloo{
+    margin-top: 20px;
+}
 .container-3-col .card{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
     margin: 0 100px;
-    max-height: 100%;
 }
 .container-3-col .card-text{
     color: var(--secondary-color);
