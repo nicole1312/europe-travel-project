@@ -160,6 +160,13 @@ h6{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 0;
+   
+}
+.container-3-col .embed{
+     width: 100%;
+}
+.container-3-col img{
+    aspect-ratio: 2.4/2;
 }
 .container-3-col h2{
     margin-bottom: 20px;
@@ -176,7 +183,11 @@ h6{
     text-shadow: var(--text-shadow-color);
 }
 .container-3-col .waterloo{
-    margin-top: 20px;
+    margin-top: 30px;
+}
+.container-3-col .hall,
+.container-3-col .cafe{
+    margin-top: 47px;
 }
 .container-3-col .card{
     display: grid;
@@ -197,7 +208,7 @@ h6{
     text-decoration: none;
 }
 img{
-    max-width: 100%;
+    width: 100%;
 }
 .travel{
     background-color: var(--primary-color);
@@ -331,6 +342,12 @@ section a:hover{
     .container-3-col .card{
         grid-template-columns: 1fr;
         margin: 10px;
+    }
+    .container-3-col img{
+        display: none;
+    }
+    .img-place{
+        grid-template-columns: 1fr;
     }
     .container-3-col h5{
         margin: 20px;
