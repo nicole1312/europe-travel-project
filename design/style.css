@@ -198,7 +198,7 @@ h6{
 .container-3-col .card-text{
     color: var(--secondary-color);
     font-size: 16px;
-    text-shadow: var(--text-shadow-color);
+   
 
 }
 .container-3-col a{
