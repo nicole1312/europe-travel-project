@@ -159,20 +159,19 @@ h6{
 .img-place{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2px;
     padding: 0;  
 }
 .favorite-picture {
-   max-height: 76%;
+    height: auto;
     max-width: 100%;
-    margin: 0 auto;
+    margin: 2px auto ;
   }
 
-.container-4-col .embed{
-     width: 100%;
+  .container-4-col .embed{
+    max-width: 100%;
 }
-.container-4-col img{
-    aspect-ratio: 2.4/2;
-}
+
 .container-4-col h2{
     margin-bottom: 20px;
 }
