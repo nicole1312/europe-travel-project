@@ -1,15 +1,15 @@
 :root{
-    --primary-color:#9ec1d7;
+    --primary-color:#AF020B;
     --secondary-color:#fbf3f2;
     --link-color: #fce281;
-    --text-color:#8195a2;
-    --text-shadow-color: 0 0 1px #5987a1,
-                         0 0 3px #5987a1,
-                         0 0 6px #9EC1D7;
-    --text-hover-color: 0 0 1px #9EC1D7,
-                        0 0 2px #9EC1D7,
-                        0 0 4px #fbf3f2,
-                        0 0 8px #fbf3f2; 
+    --text-color:#214B71;
+    --text-shadow-color: 0 0 1px #741414,
+                         0 0 3px #741414,
+                         0 0 6px #410303;
+    --text-hover-color: 0 0 1px #741414,
+                        0 0 2px #741414,
+                        0 0 4px #191716,
+                        0 0 8px #0f0d0d;
 
 }
 body{
@@ -28,8 +28,6 @@ h1{
     font-weight: 400;
     margin: 80px 0;
     text-align: center; 
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgba(140, 178, 201, 0.6);
 }
 .container-0 h3,
 h3{
@@ -59,15 +57,13 @@ h3{
     margin: 60px 30px;
     padding: 20px 0;
 }
-h4{
+.container-2-1-col h4{
     color: var(--primary-color);
     font-family: 'Caveat', cursive;
     font-size: 60px;
     font-weight: 400; 
-    margin: 15px 0 ;
-    text-align: center;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgba(140, 178, 201, 0.6);           
+    margin: 35px 0 ;
+    text-align: center;           
 }
 .text{
     color:var(--text-color);
@@ -91,8 +87,6 @@ h2{
     letter-spacing: -1px;
     margin: 100px 0;
     text-align: center; 
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgba(140, 178, 201, 0.6);
 }
 em{
     font-family: 'Caveat', cursive;  
@@ -105,7 +99,7 @@ h5{
     font-size: 30px;
     letter-spacing: 1px;
     margin: 0 100px;
-    padding: 0 20px;
+    padding: 0 100px;
 }
 .text-city-introduction{
     background-color: var(--primary-color);
@@ -114,13 +108,23 @@ h5{
     font-size: 16px;
     font-weight: 400;
     line-height: 1.8;
-    padding: 20px;
+    margin: 0 0 -40px;
+    padding: 45px;
+
 }
 .container-1-2-col{
     box-shadow: inset 0 20px 20px -20px rgba(158, 193, 215, 0.4);
     display: grid;
     grid-template-columns: 1fr 2fr; 
     margin: 40px 0 100px; 
+}
+.container-1-2-col h4{
+    color: var(--primary-color);
+    font-family: 'Caveat', cursive;
+    font-size: 60px;
+    font-weight: 400; 
+    margin: 25px 0 ;
+    text-align: center; 
 }
 hr{
     border: 1px solid var(--link-color);
@@ -135,29 +139,18 @@ h6{
     margin: 30px 0 0;
     text-align: center;
 }
-.container-1-2-col a{
+.container-1-2-col .london{
     color: var(--link-color);
     font-family: 'Caveat', cursive;
     font-size: 40px;
-    padding-left: 110px;
+
+   margin: auto 10px;
     transition: all 200ms ease-in-out;
     text-decoration: none;
-}
-.container-1-2-col .london:hover{
-   color: #90c6e8;
-}
-.container-3-col .neals-yard,
-.container-3-col .waterloo-vaults,
-.container-3-col .painted-hall,
-.container-3-col .briki{
-    background-color: var(--primary-color);
-    border: 1px solid var(--primary-color);
    
 }
-.container-place{
-    padding: 8px;
-    border: 1px solid var(--primary-color);
-    height: max-content;
+.container-1-2-col .london:hover{
+   color: var(--primary-color);
 }
 .place-description{
     padding: 20px;
@@ -166,53 +159,56 @@ h6{
 .img-place{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 0;
-   
+    padding: 0;  
 }
-.container-3-col .embed{
+.favorite-picture {
+   max-height: 76%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+.container-4-col .embed{
      width: 100%;
 }
-.container-3-col img{
+.container-4-col img{
     aspect-ratio: 2.4/2;
 }
-.container-3-col h2{
+.container-4-col h2{
     margin-bottom: 20px;
 }
-.container-3-col h5{
+.container-4-col h5{
     text-align: center;
     margin: 50px;
 }
-.container-3-col h6{
+.container-4-col h6{
     color: var(--secondary-color);
     font-size: 20px;
     margin-bottom: -16px;
     text-align: start;
     text-shadow: var(--text-shadow-color);
 }
-.container-3-col .waterloo{
-    margin-top: 30px;
-}
-.container-3-col .hall,
-.container-3-col .cafe{
-    margin-top: 47px;
-}
-.container-3-col .card{
+
+
+.container-4-col .card{
+    background-color: var(--primary-color);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
-    margin: 0 100px;
+    grid-gap: 4px;
+    
 }
-.container-3-col .card-text{
+.container-4-col .card-text{
     color: var(--secondary-color);
     font-size: 16px;
-   
-
 }
-.container-3-col a{
+.container-4-col a{
     color: var(--link-color);
     font-family: 'Caveat', cursive;
     font-size: 25px;
+    transition: all 200ms ease-in-out;
     text-decoration: none;
+}
+.container-4-col a:hover{
+    text-shadow: var(--text-shadow-color);
 }
 section h2{
     margin: 110px 0 40px;
@@ -220,6 +216,7 @@ section h2{
 .grid-gallery{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    grid-gap: 2px;
     width: 100%;
     margin: 70px auto;
 }
@@ -228,7 +225,7 @@ img{
 }
 .travel{
     background-color: var(--primary-color);
-    box-shadow: inset 0 -2px 7px 0px  rgba(241, 246, 249, 0.6);
+    box-shadow: inset 0 -2px 7px 0px  rgba(252, 226, 129, 0.6);
     margin: 40px 0 0;
     padding: 14px;
     text-align: center;
@@ -242,7 +239,7 @@ img{
 } 
 .travel:hover,
 .travel-link:hover{
-    text-shadow: var(--text-hover-color);
+     text-shadow: var(--text-hover-color);
      transform: scale(1.2);    
 }
 footer{
@@ -264,10 +261,11 @@ ul{
 section a{
     color:var(--link-color);
     text-decoration: none;
-    text-shadow: var(--text-shadow-color);
+    
 }
 section a:hover{
-    color:var(--secondary-color);
+    text-shadow:var(--text-shadow-color);
+    transform: scale(1.2); 
 }
 .more,
 .about-this-website,
@@ -288,42 +286,51 @@ section a:hover{
 .source{
     padding: 30px 0 15px;
     text-align: center;
-    text-shadow: var(--text-shadow-color);
 }
 .coder {
     color: var(--link-color);
-    text-decoration: none;
-    
+    text-decoration: none;   
 }
 .coder:hover{
-   color: var(--secondary-color);
+   text-shadow: var(--text-shadow-color);
 }
 
 
-  @media(max-width: 600px){
+  @media(max-width: 900px){
     body{
         display: block;
     }
     h1{
         font-size: 40px;
-        margin: 40px 0 0;
+        margin: 50px;
     }
     .container-2-1-col,
     .container-1-2-col{
         grid-template-columns: 1fr;
-        margin: 20px 0;
+        margin: -10px 0;
+        padding: 0;
     }
     .container-footer{
         padding: 20px 0;
     }
-    h4{
-        font-size: 35px;
+    .container-text{
+        padding: 0;
     }
-    .text,
+    .container-2-1-col h4,
+    .container-1-2-col h4{
+        font-size: 40px;
+        margin: 0;
+    }
+    .text{
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 10px -10px;
+        padding: 0;
+    }
     .text-city-introduction{
         font-size: 16px;
         line-height: 1.5;
-        margin: 10px;
+        margin: 10px 0;  
     }
     strong{
         font-size: 22px;
@@ -332,11 +339,14 @@ section a:hover{
     .container-0 h3,
      h3{
     font-size: 18px;
-}
+    }
     h2,
     em{
         font-size: 30px;
         margin: 30px 0;
+    }
+    section h2{
+        margin: 30px 0 0;
     }
     h5{
         font-size: 22px;
@@ -344,8 +354,8 @@ section a:hover{
        text-align: center;
        margin: -10px 0;
     }
-    .container-1-2-col a{
-        font-size: 35px;
+    .container-1-2-col .london{
+        font-size: 30px;
         padding-left: 85px; 
     }
     .travel-link{
@@ -355,24 +365,28 @@ section a:hover{
     .travel-link:hover{
         transform: none;
     }
-    .container-3-col .card{
+    .container-4-col .card{
         grid-template-columns: 1fr;
         margin: 10px;
     }
-    .container-3-col img{
+    .container-4-col img{
         display: none;
     }
     .img-place{
         grid-template-columns: 1fr;
     }
-    .container-3-col h5{
+    .container-4-col h5{
         margin: 20px;
     }
-    .container-3-col h6{
+    .container-4-col h6{
         font-size: 14px;
     }
-    .container-3-col .card-text{
+    .container-4-col .card-text{
         font-size: 15px;
+    }
+    .container-4-col .container-place{
+        box-shadow: inset 0 -4px 9px 0px  rgba(116, 20, 20);
+    margin-top: -4px;
     }
     .grid-gallery{
         grid-template-columns: 1fr;
@@ -390,14 +404,12 @@ section a:hover{
     .about-this-website,
     .about-me{
         font-size: 14px;
-        margin: 8px 0;
-      
+        margin: 8px 0; 
     }
     .footer-text{
         color: white;
         font-size: 13px;
         line-height: 1.2;
-        margin: -20px 0 20px;
-       
+        margin: -20px 0 20px;  
     }
   }
